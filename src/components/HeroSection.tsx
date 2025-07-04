@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
                         <img
                           src="/assets/PromoBg.png"
                           alt="Pink Blob"
-                          className="absolute bottom-0 left-0 z-10 w-[100vw] pointer-events-none select-none"
+                          className="hidden lg:block 2xl:hidden absolute bottom-0 left-0 z-10 w-[100vw] pointer-events-none select-none"
                         />
                         <div className="relative">
                           <MealSubscriptionPlans />
