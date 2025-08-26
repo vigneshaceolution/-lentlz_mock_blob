@@ -1,6 +1,9 @@
 const PromoSection = () => {
   return (
-    <div className="relative w-full bg-[#114F3D] lg:bg-[#ffa900] 2xl:bg-[#114F3D] overflow-hidden font-[Montserrat]">
+    <div
+      id="promo"
+      className="relative w-full bg-[#114F3D] lg:bg-[#ffa900] 2xl:bg-[#114F3D] overflow-hidden font-[Montserrat]"
+    >
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 lg:py-28 flex flex-col lg:flex-row items-center justify-between relative">
         {/* Left Side - Text and Download */}
         <div className="w-full lg:w-1/2 text-center lg:text-left relative z-10">

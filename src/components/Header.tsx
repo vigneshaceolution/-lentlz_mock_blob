@@ -3,6 +3,14 @@ import { useState } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleScrollToPromo = () => {
+    const promo = document.getElementById("promo");
+    if (promo) {
+      promo.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMenuOpen(false); // close menu on mobile if open
+  };
+
   return (
     <header className="w-full font-['Montserrat'] pt-2 sm:pt-4 md:pt-6 -mb-1 lg:mb-0 lg:pt-0 xl:pt-10 3xl:pt-16 4xl:pt-20 relative bg-[#114F3D]">
       <div className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-10 pt-0 xl:px-14 2xl:px-20 3xl:px-28 4xl:px-36 relative">
@@ -18,21 +26,30 @@ const Header = () => {
           <div className="flex items-center justify-end h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 2xl:h-32 3xl:h-40 4xl:h-48">
             {/* Desktop Navigation - Enhanced for large monitors */}
             <nav className="hidden xl:flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6 2xl:space-x-8 3xl:space-x-12 4xl:space-x-16">
-              <button className="bg-[#F6A70B] text-[#FEFFEC] px-2 sm:px-3 xl:px-4 2xl:px-6 3xl:px-8 4xl:px-10 py-1.5 xl:py-2 3xl:py-3 4xl:py-4 rounded-2xl 3xl:rounded-3xl 4xl:rounded-3xl hover:bg-yellow-500 transition font-bold text-[13px] xl:text-[15px] 2xl:text-[16.9px] 3xl:text-[19px] 4xl:text-[22px]">
+              <button
+                onClick={handleScrollToPromo}
+                className="bg-[#F6A70B] text-[#FEFFEC] px-2 sm:px-3 xl:px-4 2xl:px-6 3xl:px-8 4xl:px-10 py-1.5 xl:py-2 3xl:py-3 4xl:py-4 rounded-2xl 3xl:rounded-3xl 4xl:rounded-3xl hover:bg-yellow-500 transition font-bold text-[13px] xl:text-[15px] 2xl:text-[16.9px] 3xl:text-[19px] 4xl:text-[22px]"
+              >
                 Download App
               </button>
             </nav>
 
             {/* Large Tablet Navigation */}
             <nav className="hidden lg:flex xl:hidden items-center space-x-2 sm:space-x-3 ">
-              <button className="bg-[#F6A70B] text-[#FEFFEC] px-2 py-1.5 rounded-2xl hover:bg-yellow-500 text-[12px] sm:text-[13px] font-bold">
+              <button
+                onClick={handleScrollToPromo}
+                className="bg-[#F6A70B] text-[#FEFFEC] px-2 py-1.5 rounded-2xl hover:bg-yellow-500 text-[12px] sm:text-[13px] font-bold"
+              >
                 Download App
               </button>
             </nav>
 
             {/* Medium Tablet Navigation */}
             <nav className="hidden md:flex lg:hidden items-center space-x-1.5 sm:space-x-2">
-              <button className="bg-[#F6A70B] text-[#FEFFEC] px-2 py-1 rounded-xl hover:bg-yellow-500 text-[11px] sm:text-[12px] font-bold">
+              <button
+                onClick={handleScrollToPromo}
+                className="bg-[#F6A70B] text-[#FEFFEC] px-2 py-1 rounded-xl hover:bg-yellow-500 text-[11px] sm:text-[12px] font-bold"
+              >
                 Download App
               </button>
             </nav>
@@ -92,7 +109,7 @@ const Header = () => {
                     </div>
                   </button>
                   <button
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={handleScrollToPromo}
                     className="w-full mt-3 bg-[#F6A70B] text-[#FEFFEC] px-4 py-2 rounded-2xl hover:bg-yellow-500 text-[14px] sm:text-[16px] font-bold shadow-lg"
                   >
                     Download App

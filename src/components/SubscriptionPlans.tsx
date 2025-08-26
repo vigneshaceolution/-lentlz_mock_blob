@@ -55,6 +55,13 @@ const MealSubscriptionPlans: React.FC = () => {
     return "lg:mt-20 2xl:mt-48 mt-0";
   };
 
+  const scrollToPromo = () => {
+    const promoElement = document.getElementById("promo");
+    if (promoElement) {
+      promoElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className="relative w-full mx-auto 
@@ -126,6 +133,7 @@ const MealSubscriptionPlans: React.FC = () => {
               <div className="relative rounded-2xl 2xl:rounded-3xl shadow-none pt-4 sm:pt-5 md:pt-6 lg:pt-6 2xl:pt-8 pb-0 px-0 overflow-visible">
                 {/* Order Now Button - responsive sizing */}
                 <button
+                  onClick={scrollToPromo}
                   className="absolute top-0.5 2xl:top-1 right-6 sm:right-8 md:right-40 lg:right-14 2xl:right-18 z-20 px-2 sm:px-2.5 md:px-3 lg:px-2 2xl:px-4 pb-1.5 sm:pb-2 2xl:pb-3 pt-1 2xl:pt-2 rounded-lg 2xl:rounded-xl bg-white border-2 2xl:border-3 hover:bg-gray-100 transition-all shadow"
                   style={{
                     fontFamily: "Fredoka One",
