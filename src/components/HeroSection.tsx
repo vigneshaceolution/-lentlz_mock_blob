@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/assets/blob-background.png"
           alt="Decorative Green Blob"
-          className="absolute top-0 left-0 w-[60vw] z-10 pointer-events-none select-none"
+          className="hidden lg:block absolute top-0 left-0 w-[60vw] z-10 pointer-events-none select-none"
         />
 
         <div className="relative ">
@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
             <img
               src="/assets/blob-pink.png"
               alt="Pink Blob"
-              className="absolute top-[40vw] right-0 z-20 w-[40vw] pointer-events-none select-none"
+              className="hidden lg:block absolute top-[40vw] right-0 z-20 w-[40vw] pointer-events-none select-none"
             />
             <div className="relative">
               <HomeSection />
@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
                 <img
                   src="/assets/blob-green-3.png"
                   alt="Pink Blob"
-                  className="absolute top-0 left-0 z-10 w-[100vw] pointer-events-none select-none"
+                  className="hidden lg:block absolute top-0 left-0 z-10 w-[100vw] pointer-events-none select-none"
                 />
                 <div className="relative">
                   <WhyLentlz />
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
                     <img
                       src="/assets/FoodBg.png"
                       alt="Pink Blob"
-                      className="absolute w-full h-full object-cover pointer-events-none select-none opacity-10"
+                      className="hidden lg:block absolute w-full h-full object-cover pointer-events-none select-none opacity-10"
                     />
                     <div className="relative z-50">
                       <FoodPresentationSection />

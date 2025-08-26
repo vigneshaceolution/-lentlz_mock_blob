@@ -14,14 +14,14 @@ const HomeSection = () => {
                 <img
                   src="/assets/food-bowl.png"
                   alt="Healthy food bowl"
-                  className="lg:ml-32 2xl:ml-40 mx-auto lg:mx-0 w-[280px] sm:w-[350px] md:w-[400px] lg:w-[560px] 2xl:w-full object-cover"
+                  className="select-none lg:ml-32 2xl:ml-40 mx-auto lg:mx-0 w-[280px] sm:w-[350px] md:w-[400px] lg:w-[560px] 2xl:w-full object-cover"
                 />
 
                 {/* Fork - responsive positioning */}
                 <img
                   src="/assets/fork.png"
                   alt="Fork"
-                  className="absolute -top-5 left-[-20px] sm:left-[80px] md:left-[-25px] md:-top-8 lg:left-30 2xl:left-20 2xl:-top-10
+                  className="select-none absolute -top-5 left-[-20px] sm:left-[80px] md:left-[-25px] md:-top-8 lg:left-30 2xl:left-20 2xl:-top-10
                            w-[120px] sm:w-[140px] md:w-[160px] lg:w-[200px] 2xl:w-[300px]
                            rotate-[-5deg]"
                 />
@@ -33,7 +33,7 @@ const HomeSection = () => {
                   className="absolute -top-14 sm:-top-10 md:-top-18 lg:-top-15 2xl:-top-28
                            right-[-40px] sm:right-[40px] md:right-[-40px] lg:-right-20 2xl:-right-58
                            w-[120px] sm:w-[140px] md:w-[160px] lg:w-[200px] 2xl:w-[300px]
-                           rotate-[0deg]"
+                           rotate-[0deg] select-none"
                 />
 
                 {/* Left Sparkle - responsive positioning */}
@@ -42,7 +42,7 @@ const HomeSection = () => {
                   alt="Left Sparkle"
                   className="absolute left-[-40px] sm:left-[60px] md:left-[-50px] lg:left-22 2xl:left-28
                            top-[60px] sm:top-[80px] md:top-[70px] lg:top-26 2xl:top-32
-                           w-[50px] sm:w-[60px] md:w-[70px] lg:w-[80px] 2xl:w-[100px]"
+                           w-[50px] sm:w-[60px] md:w-[70px] lg:w-[80px] 2xl:w-[100px] select-none"
                 />
 
                 {/* Right Sparkle - responsive positioning */}
@@ -51,7 +51,7 @@ const HomeSection = () => {
                   alt="Right Sparkle"
                   className="absolute right-[-30px] sm:right-[60px] md:right-[-40px] lg:-right-32 2xl:-right-55
                            top-[60px] sm:top-[80px] md:top-[70px] lg:top-26 2xl:top-32
-                           w-[50px] sm:w-[60px] md:w-[70px] lg:w-[80px] 2xl:w-[100px]"
+                           w-[50px] sm:w-[60px] md:w-[70px] lg:w-[80px] 2xl:w-[100px] select-none"
                 />
 
                 {/* Top Leaf - responsive positioning */}
@@ -61,7 +61,7 @@ const HomeSection = () => {
                   className="absolute -top-[60px] sm:-top-[70px] md:-top-[80px] lg:-top-25 2xl:-top-42
                            right-[80px] sm:right-[100px] md:right-[120px] lg:right-16 2xl:right-20
                            w-[60px] sm:w-[70px] md:w-[80px] lg:w-[90px] 2xl:w-[150px]
-                           rotate-[5deg]"
+                           rotate-[5deg] select-none"
                 />
 
                 {/* Bottom Leaf - responsive positioning */}
@@ -71,7 +71,7 @@ const HomeSection = () => {
                   className="absolute -bottom-10 md:-bottom-12 2xl:-bottom-16
                            left-[80px] sm:left-[120px] md:left-[40px] lg:left-35 2xl:left-44
                            w-[60px] sm:w-[70px] md:w-[80px] lg:w-[90px] 2xl:w-[150px]
-                           rotate-[-5deg]"
+                           rotate-[-5deg] select-none"
                 />
               </div>
             </div>
@@ -83,9 +83,10 @@ const HomeSection = () => {
                   className="text-orange-400 block"
                   style={{
                     fontFamily: "Fredoka One, cursive",
-                    fontSize: typeof window !== "undefined" && window.innerWidth >= 1536 
-                      ? "72px" 
-                      : "clamp(36px, 8vw, 60.1px)",
+                    fontSize:
+                      typeof window !== "undefined" && window.innerWidth >= 1536
+                        ? "72px"
+                        : "clamp(36px, 8vw, 60.1px)",
                   }}
                 >
                   HEALTHY
@@ -94,9 +95,10 @@ const HomeSection = () => {
                   className="text-orange-400 block"
                   style={{
                     fontFamily: "Fredoka One, cursive",
-                    fontSize: typeof window !== "undefined" && window.innerWidth >= 1536 
-                      ? "72px" 
-                      : "clamp(36px, 8vw, 60.1px)",
+                    fontSize:
+                      typeof window !== "undefined" && window.innerWidth >= 1536
+                        ? "72px"
+                        : "clamp(36px, 8vw, 60.1px)",
                   }}
                 >
                   INSIDE,
@@ -105,9 +107,10 @@ const HomeSection = () => {
                   className="block"
                   style={{
                     fontFamily: "Fredoka One, cursive",
-                    fontSize: typeof window !== "undefined" && window.innerWidth >= 1536 
-                      ? "72px" 
-                      : "clamp(36px, 8vw, 60.1px)",
+                    fontSize:
+                      typeof window !== "undefined" && window.innerWidth >= 1536
+                        ? "72px"
+                        : "clamp(36px, 8vw, 60.1px)",
                     color: "#F44E5D",
                   }}
                 >
@@ -117,9 +120,10 @@ const HomeSection = () => {
                   className="block"
                   style={{
                     fontFamily: "Fredoka One, cursive",
-                    fontSize: typeof window !== "undefined" && window.innerWidth >= 1536 
-                      ? "72px" 
-                      : "clamp(36px, 8vw, 60.1px)",
+                    fontSize:
+                      typeof window !== "undefined" && window.innerWidth >= 1536
+                        ? "72px"
+                        : "clamp(36px, 8vw, 60.1px)",
                     color: "#F44E5D",
                   }}
                 >
@@ -131,9 +135,10 @@ const HomeSection = () => {
                 className="text-white mb-8 2xl:mb-12 max-w-lg 2xl:max-w-2xl leading-relaxed font-medium mx-auto lg:mx-0"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: typeof window !== "undefined" && window.innerWidth >= 1536 
-                    ? "18px" 
-                    : "clamp(13px, 2.5vw, 14px)",
+                  fontSize:
+                    typeof window !== "undefined" && window.innerWidth >= 1536
+                      ? "18px"
+                      : "clamp(13px, 2.5vw, 14px)",
                 }}
               >
                 Lentlz is a unique food delivery service offering{" "}
@@ -148,12 +153,20 @@ const HomeSection = () => {
               </p>
 
               <button
+                onClick={() => {
+                  const section = document.getElementById("why-lentlz");
+                  section?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
                 className="bg-[#114F3D] text-white py-3 2xl:py-5 px-6 sm:px-8 2xl:px-0 rounded-full hover:bg-opacity-80 transition flex items-center group mx-auto lg:mx-0"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: typeof window !== "undefined" && window.innerWidth >= 1536 
-                    ? "18px" 
-                    : "clamp(13px, 2.5vw, 14px)",
+                  fontSize:
+                    typeof window !== "undefined" && window.innerWidth >= 1536
+                      ? "18px"
+                      : "clamp(13px, 2.5vw, 14px)",
                   fontWeight: 600,
                 }}
               >
@@ -167,7 +180,7 @@ const HomeSection = () => {
               <img
                 src="/assets/leaf-side.png"
                 alt="Side Leaf"
-                className="absolute right-0 bottom=[vw] w-[10vw] 2xl:w-[200px] rotate-[-5deg] hidden lg:block lg:-right-5 lg:-bottom-18 2xl:-right-60 2xl:-bottom-70"
+                className="select-none absolute right-0 bottom=[vw] w-[10vw] 2xl:w-[200px] rotate-[-5deg] hidden lg:block lg:-right-5 lg:-bottom-18 2xl:-right-60 2xl:-bottom-70"
               />
             </div>
           </div>

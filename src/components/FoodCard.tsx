@@ -198,7 +198,7 @@ const FoodPresentationSection: React.FC = () => {
         <img
           src="/assets/masala-one.png"
           alt="Masala Top"
-          className="absolute top-38 -left-74 transform -translate-x-1/2 z-21 hidden lg:block 2xl:top-52 2xl:-left-110"
+          className="select-none absolute top-38 -left-74 transform -translate-x-1/2 z-21 hidden lg:block 2xl:top-52 2xl:-left-110"
           style={{
             width:
               typeof window !== "undefined" && window.innerWidth >= 1536
@@ -210,7 +210,7 @@ const FoodPresentationSection: React.FC = () => {
         <img
           src="/assets/masala-two.png"
           alt="Masala Side"
-          className="absolute top-1/2 -left-90 transform -translate-y-1/2 z-20 hidden lg:block 2xl:-left-130"
+          className="select-none absolute top-1/2 -left-90 transform -translate-y-1/2 z-20 hidden lg:block 2xl:-left-130"
           style={{
             width:
               typeof window !== "undefined" && window.innerWidth >= 1536
@@ -265,7 +265,7 @@ const FoodPresentationSection: React.FC = () => {
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="rounded-[15px] lg:rounded-[30px] 2xl:rounded-[35px] border-[3px] lg:border-[4px] 2xl:border-[5px] border-white object-cover"
+                    className="select-none rounded-[15px] lg:rounded-[30px] 2xl:rounded-[35px] border-[3px] lg:border-[4px] 2xl:border-[5px] border-white object-cover"
                     style={{
                       width: `${getImageWidth()}px`,
                       height: getImageHeight(),

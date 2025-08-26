@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <img
             src="/assets/acelutionIcon.png"
             alt="Acelution Logo"
-            className="h-6 sm:h-8 lg:h-10 object-contain"
+            className="h-6 sm:h-8 lg:h-10 object-contain select-none"
           />
         </div>
 

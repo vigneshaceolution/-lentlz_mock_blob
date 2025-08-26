@@ -10,107 +10,30 @@ const Header = () => {
           <img
             src="/assets/logo.png"
             alt="Lentlz Logo"
-            className="w-[80px] h-[65px] xs:w-[100px] xs:h-[80px] sm:w-[120px] sm:h-[100px] md:w-[140px] md:h-[115px] lg:w-[160px] lg:h-[130px] xl:w-[180px] xl:h-[150px] 2xl:w-[480px] 2xl:h-[280px] 3xl:w-[260px] 3xl:h-[210px] 4xl:w-[300px] 4xl:h-[240px] object-contain"
+            className="w-[80px] h-[65px] xs:w-[100px] xs:h-[80px] sm:w-[120px] sm:h-[100px] md:w-[140px] md:h-[115px] lg:w-[160px] lg:h-[130px] xl:w-[180px] xl:h-[150px] 2xl:w-[480px] 2xl:h-[280px] 3xl:w-[260px] 3xl:h-[210px] 4xl:w-[300px] 4xl:h-[240px] object-contain select-none"
           />
         </div>
-
 
         <div className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-10 pt-0 xl:px-14 2xl:px-20 3xl:px-28 4xl:px-36">
           <div className="flex items-center justify-end h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 2xl:h-32 3xl:h-40 4xl:h-48">
             {/* Desktop Navigation - Enhanced for large monitors */}
             <nav className="hidden xl:flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6 2xl:space-x-8 3xl:space-x-12 4xl:space-x-16">
-              <a
-                href="#about"
-                className="text-[#F6A70B] hover:text-yellow-400 text-[13px] sm:text-[14px] xl:text-[15px] 2xl:text-[16.9px] 3xl:text-[19px] 4xl:text-[22px] font-medium px-1 sm:px-2 3xl:px-3 4xl:px-4"
-              >
-                About Lentlz
-              </a>
-              <a
-                href="#menu"
-                className="text-[#F6A70B] hover:text-yellow-400 text-[13px] sm:text-[14px] xl:text-[15px] 2xl:text-[16.9px] 3xl:text-[19px] 4xl:text-[22px] font-medium px-1 sm:px-2 3xl:px-3 4xl:px-4"
-              >
-                See Menu
-              </a>
-              <a
-                href="#contact"
-                className="text-[#F6A70B] hover:text-yellow-400 text-[13px] sm:text-[14px] xl:text-[15px] 2xl:text-[16.9px] 3xl:text-[19px] 4xl:text-[22px] font-medium px-1 sm:px-2 3xl:px-3 4xl:px-4"
-              >
-                Contact Us
-              </a>
-
-              <button className="text-[#F44E5D] hover:text-pink-400 text-[13px] sm:text-[14px] xl:text-[15px] 2xl:text-[16.9px] 3xl:text-[19px] 4xl:text-[22px] font-medium flex items-center px-1 sm:px-2 3xl:px-3 4xl:px-4">
-                Log In
-                <div className="ml-2 3xl:ml-3 4xl:ml-4 w-4 h-4 xl:w-5 xl:h-5 3xl:w-6 3xl:h-6 4xl:w-7 4xl:h-7 bg-[#F44E5D] rounded-full flex items-center justify-center">
-                  <span className="text-white text-[10px] xl:text-xs 3xl:text-sm 4xl:text-base">👤</span>
-                </div>
-              </button>
-
               <button className="bg-[#F6A70B] text-[#FEFFEC] px-2 sm:px-3 xl:px-4 2xl:px-6 3xl:px-8 4xl:px-10 py-1.5 xl:py-2 3xl:py-3 4xl:py-4 rounded-2xl 3xl:rounded-3xl 4xl:rounded-3xl hover:bg-yellow-500 transition font-bold text-[13px] xl:text-[15px] 2xl:text-[16.9px] 3xl:text-[19px] 4xl:text-[22px]">
-                Subscription
+                Download App
               </button>
             </nav>
 
             {/* Large Tablet Navigation */}
             <nav className="hidden lg:flex xl:hidden items-center space-x-2 sm:space-x-3 ">
-              <a
-                href="#about"
-                className="text-[#F6A70B] text-[12px] sm:text-[13px] px-1 py-0.5"
-              >
-                About
-              </a>
-              <a
-                href="#menu"
-                className="text-[#F6A70B] text-[12px] sm:text-[13px] px-1 py-0.5"
-              >
-                Menu
-              </a>
-              <a
-                href="#contact"
-                className="text-[#F6A70B] text-[12px] sm:text-[13px] px-1 py-0.5"
-              >
-                Contact
-              </a>
-
-              <button className="text-[#F44E5D] flex items-center px-1">
-                <div className="w-4 h-4 bg-[#F44E5D] rounded-full flex items-center justify-center">
-                  <span className="text-white text-[9px]">👤</span>
-                </div>
-              </button>
-
               <button className="bg-[#F6A70B] text-[#FEFFEC] px-2 py-1.5 rounded-2xl hover:bg-yellow-500 text-[12px] sm:text-[13px] font-bold">
-                Subscribe
+                Download App
               </button>
             </nav>
 
             {/* Medium Tablet Navigation */}
             <nav className="hidden md:flex lg:hidden items-center space-x-1.5 sm:space-x-2">
-              <a
-                href="#about"
-                className="text-[#F6A70B] text-[11px] sm:text-[12px] px-1"
-              >
-                About
-              </a>
-              <a
-                href="#menu"
-                className="text-[#F6A70B] text-[11px] sm:text-[12px] px-1"
-              >
-                Menu
-              </a>
-              <a
-                href="#contact"
-                className="text-[#F6A70B] text-[11px] sm:text-[12px] px-1"
-              >
-                Contact
-              </a>
-
-              <button className="text-[#F44E5D] px-1">
-                <div className="w-3 h-3 bg-[#F44E5D] rounded-full flex items-center justify-center">
-                  <span className="text-white text-[8px]">👤</span>
-                </div>
-              </button>
-
               <button className="bg-[#F6A70B] text-[#FEFFEC] px-2 py-1 rounded-xl hover:bg-yellow-500 text-[11px] sm:text-[12px] font-bold">
-                Subscribe
+                Download App
               </button>
             </nav>
 
@@ -158,28 +81,6 @@ const Header = () => {
           {isMenuOpen && (
             <nav className="md:hidden py-3 sm:py-4 px-2 sm:px-4 mt-2 bg-[#114F3D] bg-opacity-95 border-t border-[#F6A70B]/30 backdrop-blur-sm rounded-b-lg shadow-lg animate-in slide-in-from-top-2 duration-200">
               <div className="space-y-2 sm:space-y-3">
-                <a
-                  href="#about"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 px-3 text-[#F6A70B] text-[14px] sm:text-[15px] hover:text-yellow-400 hover:bg-yellow-50 rounded-lg"
-                >
-                  About Lentlz
-                </a>
-                <a
-                  href="#menu"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 px-3 text-[#F6A70B] text-[14px] sm:text-[15px] hover:text-yellow-400 hover:bg-yellow-50 rounded-lg"
-                >
-                  See Menu
-                </a>
-                <a
-                  href="#contact"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 px-3 text-[#F6A70B] text-[14px] sm:text-[15px] hover:text-yellow-400 hover:bg-yellow-50 rounded-lg"
-                >
-                  Contact Us
-                </a>
-
                 <div className="pt-3 border-t border-[#F6A70B]/20 mt-3">
                   <button
                     onClick={() => setIsMenuOpen(false)}
@@ -194,7 +95,7 @@ const Header = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className="w-full mt-3 bg-[#F6A70B] text-[#FEFFEC] px-4 py-2 rounded-2xl hover:bg-yellow-500 text-[14px] sm:text-[16px] font-bold shadow-lg"
                   >
-                    Subscription
+                    Download App
                   </button>
                 </div>
               </div>

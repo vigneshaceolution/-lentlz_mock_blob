@@ -1,4 +1,3 @@
-
 const PromoSection = () => {
   return (
     <div className="relative w-full bg-[#114F3D] lg:bg-[#ffa900] 2xl:bg-[#114F3D] overflow-hidden font-[Montserrat]">
@@ -9,7 +8,7 @@ const PromoSection = () => {
           <img
             src="/assets/EatBurst.png"
             alt="EatBurst"
-            className="hidden lg:block absolute -top-10 -left-14 "
+            className="select-none hidden lg:block absolute -top-10 -left-14 "
           />
 
           <h1
@@ -35,12 +34,12 @@ const PromoSection = () => {
             <img
               src="/assets/google-play.png"
               alt="Google Play"
-              className="w-32 lg:w-36 h-auto"
+              className="select-none w-32 lg:w-36 h-auto"
             />
             <img
               src="/assets/app-store.png"
               alt="App Store"
-              className="w-32 lg:w-36 h-auto"
+              className="select-none w-32 lg:w-36 h-auto"
             />
           </div>
         </div>
@@ -51,7 +50,7 @@ const PromoSection = () => {
           <img
             src="/assets/frame1.png"
             alt="Mobile Frame"
-            className="h-auto relative z-10"
+            className="select-none h-auto relative z-10"
             style={{ width: "clamp(240px, 25vw, 320px)" }}
           />
 
@@ -65,7 +64,7 @@ const PromoSection = () => {
                 <img
                   src="/assets/Select Meals.png"
                   alt="Select"
-                  className="w-8 h-8"
+                  className="w-8 h-8 select-none"
                 />
               </div>
               <div>
@@ -90,7 +89,7 @@ const PromoSection = () => {
                 <img
                   src="/assets/Food Delivery.png"
                   alt="Delivery"
-                  className="w-8 h-8"
+                  className="w-8 h-8 select-none"
                 />
               </div>
               <div>
@@ -113,7 +112,7 @@ const PromoSection = () => {
         <img
           src="/assets/corner-decor.png"
           alt="Corner Decoration"
-          className="absolute bottom-0 left-0 w-32 lg:w-44 z-20"
+          className="absolute bottom-0 left-0 w-32 lg:w-44 z-20 select-none"
         />
       </section>
     </div>

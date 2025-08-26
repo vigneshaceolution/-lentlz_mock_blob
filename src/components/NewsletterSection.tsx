@@ -3,18 +3,16 @@ import React from "react";
 const NewsletterSection: React.FC = () => {
   return (
     <div className="w-full bg-white font-[Montserrat] relative overflow-x-hidden">
-      
       {/* Top Decorative Image (visible only on lg and up) */}
       {/* <div className="hidden lg:block absolute -top-20 right-48 z-40">
         <img
           src="/assets/top-decor.png"
           alt="Top Decoration"
-          className="w-40"
+          className="w-40  select-none"
         />
       </div> */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-10 flex flex-col lg:flex-row items-center justify-between gap-10">
-        
         {/* Left Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#114F3D] mb-4">
@@ -42,9 +40,21 @@ const NewsletterSection: React.FC = () => {
               Follow us on Social Media
             </p>
             <div className="flex justify-center lg:justify-start items-center gap-4">
-              <img src="/assets/instagram.png" alt="Instagram" className="w-10 h-10" />
-              <img src="/assets/facebook.png" alt="Facebook" className="w-10 h-10" />
-              <img src="/assets/youtube.png" alt="YouTube" className="w-12 h-10" />
+              <img
+                src="/assets/instagram.png"
+                alt="Instagram"
+                className="w-10 h-10 select-none"
+              />
+              <img
+                src="/assets/facebook.png"
+                alt="Facebook"
+                className="w-10 h-10 select-none"
+              />
+              <img
+                src="/assets/youtube.png"
+                alt="YouTube"
+                className="w-12 h-10 select-none"
+              />
             </div>
           </div>
         </div>
@@ -54,7 +64,7 @@ const NewsletterSection: React.FC = () => {
           <img
             src="/assets/family-image.png"
             alt="Family"
-            className="w-full max-w-md lg:max-w-xl h-auto object-contain"
+            className="w-full max-w-md lg:max-w-xl h-auto object-contain select-none"
           />
         </div>
       </div>

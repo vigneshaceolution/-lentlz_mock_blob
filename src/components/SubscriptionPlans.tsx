@@ -23,28 +23,28 @@ const MealSubscriptionPlans: React.FC = () => {
     const sampleData = [
       {
         id: 1,
-        dayCount: 7,
+        dayCount: 3,
         title: "Weekly Plan",
         description: "Perfect for trying our service",
-        weeklyPrice: 49,
-        image: "food1"
+        weeklyPrice: 399,
+        image: "food1",
       },
       {
         id: 2,
-        dayCount: 14,
+        dayCount: 4,
         title: "Bi-Weekly Plan",
         description: "Great for regular meals",
-        weeklyPrice: 89,
-        image: "food2"
+        weeklyPrice: 499,
+        image: "food2",
       },
       {
         id: 3,
-        dayCount: 30,
+        dayCount: 5,
         title: "Monthly Plan",
         description: "Best value for families",
-        weeklyPrice: 149,
-        image: "food3"
-      }
+        weeklyPrice: 599,
+        image: "food3",
+      },
     ];
     setSubscriptionPlans(sampleData);
   }, []);
@@ -56,10 +56,12 @@ const MealSubscriptionPlans: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full mx-auto 
+    <div
+      className="relative w-full mx-auto 
       sm:p-0 pb-0.5 md:pb-0.5 lg:p-0 2xl:p-0
       sm:mb-0 md:mb-0 lg:mb-0 2xl:mb-0
-      font-[Inter] z-20">
+      font-[Inter] z-20 "
+    >
       {/* Background for mobile and tablet only */}
       <div
         className="absolute inset-0 bg-[url('/assets/mock-bg.png')] bg-cover bg-no-repeat opacity-10 sm:opacity-20 md:opacity-20 lg:hidden"
@@ -77,16 +79,19 @@ const MealSubscriptionPlans: React.FC = () => {
           <img
             src="/assets/GreenLeafGroup.png"
             alt="GreenLeafGroup"
-            className="absolute -left-20 2xl:-left-10 -top-16 2xl:-top-20 hidden lg:block"
-            style={{ 
-              width: typeof window !== "undefined" && window.innerWidth >= 1536 ? "200px" : "240px" 
+            className="select-none absolute -left-20 2xl:-left-10 -top-16 2xl:-top-20 hidden lg:block"
+            style={{
+              width:
+                typeof window !== "undefined" && window.innerWidth >= 1536
+                  ? "200px"
+                  : "240px",
             }}
           />
 
           <img
             src="/assets/right-leaf.png"
             alt="Right Leaf Decor"
-            className="w-[190px] 2xl:w-[240px] absolute -top-30 2xl:-top-36 -right-16 2xl:-right-4 hidden lg:block"
+            className="select-none w-[190px] 2xl:w-[240px] absolute -top-30 2xl:-top-36 -right-16 2xl:-right-4 hidden lg:block"
           />
 
           {subscriptionPlans.map((plan, index) => (
@@ -102,7 +107,7 @@ const MealSubscriptionPlans: React.FC = () => {
                   <img
                     src="/assets/OurSubscriptionsLeftBurst.png"
                     alt="Our Subscriptions Left Burst"
-                    className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] 2xl:w-[130px] 2xl:h-[130px] absolute -top-6 sm:-top-7 md:-top-8 lg:-top-10 2xl:-top-14 -left-10 lg:-left-16 2xl:-left-20 sm:right-18 md:right-20 lg:right-77"
+                    className="select-none w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] 2xl:w-[130px] 2xl:h-[130px] absolute -top-6 sm:-top-7 md:-top-8 lg:-top-10 2xl:-top-14 -left-10 lg:-left-16 2xl:-left-20 sm:right-18 md:right-20 lg:right-77"
                   />
                   <h2
                     className="text-[22px] sm:text-[26px] md:text-[30px] lg:text-[38px] 2xl:text-[48px] mb-3 sm:mb-4 2xl:mb-6 text-start leading-tight"
@@ -124,7 +129,10 @@ const MealSubscriptionPlans: React.FC = () => {
                   className="absolute top-0.5 2xl:top-1 right-6 sm:right-8 md:right-40 lg:right-14 2xl:right-18 z-20 px-2 sm:px-2.5 md:px-3 lg:px-2 2xl:px-4 pb-1.5 sm:pb-2 2xl:pb-3 pt-1 2xl:pt-2 rounded-lg 2xl:rounded-xl bg-white border-2 2xl:border-3 hover:bg-gray-100 transition-all shadow"
                   style={{
                     fontFamily: "Fredoka One",
-                    fontSize: typeof window !== "undefined" && window.innerWidth >= 1536 ? "16px" : "12px",
+                    fontSize:
+                      typeof window !== "undefined" && window.innerWidth >= 1536
+                        ? "16px"
+                        : "12px",
                     borderColor: "#153704",
                     color: "#114F3D",
                   }}
@@ -138,9 +146,13 @@ const MealSubscriptionPlans: React.FC = () => {
                 <div className="flex items-start">
                   <div
                     className="w-1/2 px-2.5 sm:px-3 md:px-3.5 lg:px-4 2xl:px-6 pb-6 sm:pb-7 md:pb-8 lg:pb-10 2xl:pb-12 pt-3 sm:pt-3.5 md:pt-4 lg:pt-5 2xl:pt-7 rounded-l-3xl 2xl:rounded-l-4xl"
-                    style={{ 
-                      backgroundColor: "#FFAA29", 
-                      minHeight: typeof window !== "undefined" && window.innerWidth >= 1536 ? "220px" : "180px" 
+                    style={{
+                      backgroundColor: "#FFAA29",
+                      minHeight:
+                        typeof window !== "undefined" &&
+                        window.innerWidth >= 1536
+                          ? "220px"
+                          : "180px",
                     }}
                   >
                     <div
@@ -159,9 +171,13 @@ const MealSubscriptionPlans: React.FC = () => {
 
                   <div
                     className="w-[110px] sm:w-[120px] md:w-[130px] lg:w-[150px] 2xl:w-[180px] px-2.5 sm:px-3 md:px-3.5 lg:px-4 2xl:px-5 py-4 sm:py-4.5 md:py-5 lg:py-6 2xl:py-8 flex items-center rounded-r-3xl 2xl:rounded-r-4xl"
-                    style={{ 
-                      backgroundColor: "#F44E5D", 
-                      minHeight: typeof window !== "undefined" && window.innerWidth >= 1536 ? "180px" : "140px" 
+                    style={{
+                      backgroundColor: "#F44E5D",
+                      minHeight:
+                        typeof window !== "undefined" &&
+                        window.innerWidth >= 1536
+                          ? "180px"
+                          : "140px",
                     }}
                   >
                     <p
@@ -178,9 +194,13 @@ const MealSubscriptionPlans: React.FC = () => {
                   <img
                     src={imageMap[plan.image]}
                     alt={`${plan.title} meal`}
-                    className="w-full object-contain"
+                    className="select-none w-full object-contain"
                     style={{
-                      height: typeof window !== "undefined" && window.innerWidth >= 1536 ? "auto" : "auto"
+                      height:
+                        typeof window !== "undefined" &&
+                        window.innerWidth >= 1536
+                          ? "auto"
+                          : "auto",
                     }}
                   />
 
@@ -189,7 +209,7 @@ const MealSubscriptionPlans: React.FC = () => {
                     <img
                       src="/assets/priceTagBubble.png"
                       alt="Price bubble"
-                      className="w-full h-full object-contain"
+                      className="select-none w-full h-full object-contain"
                     />
                     <div
                       className="absolute inset-0 flex justify-center flex-row text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] 2xl:text-[18px] mt-4 sm:mt-4.5 md:mt-5 lg:mt-7 2xl:mt-9 ml-2.5 sm:ml-3 md:ml-3.5 lg:ml-4 2xl:ml-5"
@@ -215,9 +235,12 @@ const MealSubscriptionPlans: React.FC = () => {
           <img
             src="/assets/food-leaf.png"
             alt="Burst Decoration"
-            className="absolute -bottom-31 2xl:-bottom-60 left-90 2xl:left-160 hidden lg:block"
-            style={{ 
-              width: typeof window !== "undefined" && window.innerWidth >= 1536 ? "200px" : "160px" 
+            className="select-none absolute -bottom-31 2xl:-bottom-60 left-90 2xl:left-160 hidden lg:block"
+            style={{
+              width:
+                typeof window !== "undefined" && window.innerWidth >= 1536
+                  ? "200px"
+                  : "160px",
             }}
           />
         </div>

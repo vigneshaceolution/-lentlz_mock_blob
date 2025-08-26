@@ -1,13 +1,16 @@
 const WhyLentlzSection = () => {
   return (
-    <div className="pt-20 px-4 md:px-6 md:pb-20 lg:pb-0 lg:px-8 lg:-mb-26 2xl:px-12 2xl:pt-16 2xl:-mt-40 2xl:pb-50 overflow-hidden bg-[#ffaa29] lg:bg-transparent">
+    <div
+      id="why-lentlz"
+      className="pt-20 px-4 md:px-6 md:pb-20 lg:pb-0 lg:px-8 lg:-mb-26 2xl:px-12 2xl:pt-16 2xl:-mt-40 2xl:pb-50 overflow-hidden bg-[#ffaa29] lg:bg-transparent"
+    >
       <div className="max-w-7xl 2xl:max-w-9xl mx-auto ">
         {/* Header Section */}
         <div className="relative ml-0 md:ml-10 lg:ml-60 2xl:ml-18 mb-8 lg:mb-0 2xl:mb-4 z-20">
           <img
             src="/assets/Mushrooms.png"
             alt="Mushrooms"
-            className="absolute
+            className="select-none absolute
             -left-4 -top-10 w-14 h-14
             sm:-left-20 sm:w-14 sm:h-14
             md:-left-20 md:w-35 md:-top-2 md:h-auto
@@ -19,7 +22,7 @@ const WhyLentlzSection = () => {
           <div className="absolute left-10 sm:-left-8 top-1/2 transform -translate-y-1/2 rounded-full p-1 md:p-2 lg:p-3 lg:-left-18 md:left-40 2xl:-left-10 2xl:p-4">
             <img
               src="/assets/Natural.png"
-              className="w-20 sm:w-24 md:w-28 lg:w-40 2xl:w-52"
+              className="w-20 sm:w-24 md:w-28 lg:w-40 2xl:w-52 select-none"
             />
           </div>
 
@@ -44,7 +47,7 @@ const WhyLentlzSection = () => {
               <img
                 src="/assets/HealthBenefitLeftBurst.png"
                 alt="Burst"
-                className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-[100px] lg:h-[100px] 2xl:w-[130px] 2xl:h-[130px] -ml-2 sm:-ml-4 md:left-60 md:top-3 md:-ml-8 lg:-ml-80 2xl:-ml-84 absolute -top-4 lg:-top-0 2xl:-top-2 left-17"
+                className="select-none w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-[100px] lg:h-[100px] 2xl:w-[130px] 2xl:h-[130px] -ml-2 sm:-ml-4 md:left-60 md:top-3 md:-ml-8 lg:-ml-80 2xl:-ml-84 absolute -top-4 lg:-top-0 2xl:-top-2 left-17"
               />
               <h2
                 className="mx-auto lg:ml-0 text-2xl md:text-3xl lg:text-[42.9px] 2xl:text-[56px] mb-4 lg:mb-8 2xl:mb-12 md:mx-auto md:pt-10 2xl:pt-16"
@@ -132,7 +135,7 @@ const WhyLentlzSection = () => {
               <div className="absolute left-[270px] 2xl:left-[350px] top-[150px] 2xl:top-[400px] bg-gray-200 rounded-2xl shadow-lg overflow-hidden w-[300px] h-[450px] 2xl:w-[390px] 2xl:h-[590px]">
                 <img
                   src="/assets/Variety of healthy bowls.png"
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="w-full h-full object-cover rounded-2xl select-none"
                   alt="Healthy Bowls"
                 />
               </div>
@@ -151,7 +154,7 @@ const WhyLentlzSection = () => {
                   <img
                     src="/assets/Lentlz food bowl.png"
                     alt="Bowl"
-                    className="w-[280px] sm:w-[300px] md:w-[320px] lg:w-[380px] 2xl:w-[550px] h-[420px] sm:h-[460px] md:h-[480px] lg:h-[500px] 2xl:h-auto object-cover rounded-4xl"
+                    className="select-none w-[280px] sm:w-[300px] md:w-[320px] lg:w-[380px] 2xl:w-[550px] h-[420px] sm:h-[460px] md:h-[480px] lg:h-[500px] 2xl:h-auto object-cover rounded-4xl"
                   />
                 </div>
                 <div
@@ -165,19 +168,19 @@ const WhyLentlzSection = () => {
                   <img
                     src="/assets/Happy family eating.png"
                     alt="Family"
-                    className="w-full h-full object-cover rounded-4xl"
+                    className="select-none w-full h-full object-cover rounded-4xl"
                   />
                 </div>
 
                 <img
                   src="/assets/green_leaf_corner.png"
                   alt="Leaf"
-                  className="absolute right-[-5vw] top-50 w-[10vw] h-auto "
+                  className="select-none absolute right-[-5vw] top-50 w-[10vw] h-auto "
                 />
                 <img
                   src="/assets/RedCirclesGroup.png"
                   alt="Red Circles"
-                  className="absolute -right-26 -bottom-32 w-20 h-20 sm:w-20 sm:h-20 lg:w-auto lg:h-auto lg:-right-38 lg:top-150 2xl:-right-40 2xl:top-250 2xl:scale-125 md:-right-80 md:w-60 md:h-auto md:-bottom-96"
+                  className="select-none absolute -right-26 -bottom-32 w-20 h-20 sm:w-20 sm:h-20 lg:w-auto lg:h-auto lg:-right-38 lg:top-150 2xl:-right-40 2xl:top-250 2xl:scale-125 md:-right-80 md:w-60 md:h-auto md:-bottom-96"
                 />
               </div>
             </div>
@@ -187,14 +190,14 @@ const WhyLentlzSection = () => {
               <div className="bg-gray-200 rounded-2xl shadow-lg overflow-hidden w-32 h-48 sm:w-36 sm:h-52 md:w-40 md:h-60">
                 <img
                   src="/assets/Professional chef cooking.png"
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="select-none w-full h-full object-cover rounded-2xl"
                   alt="Chef"
                 />
               </div>
               <div className="bg-gray-200 rounded-2xl shadow-lg overflow-hidden w-32 h-48 sm:w-40 sm:h-60 md:w-44 md:h-66">
                 <img
                   src="/assets/Variety of healthy bowls.png"
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="select-none w-full h-full object-cover rounded-2xl"
                   alt="Bowls"
                 />
               </div>
@@ -206,7 +209,7 @@ const WhyLentlzSection = () => {
                 <img
                   src="/assets/HealthBenefitLeftBurst.png"
                   alt="Burst"
-                  className="absolute -top-4 -ml-4 w-12 h-12 sm:w-16 sm:h-16 lg:w-[100px] lg:h-[100px] 2xl:w-[130px] 2xl:h-[130px] md:top-2 md:left-10 left-12 lg:top-30 2xl:top-40 lg:-left-14 2xl:-left-18"
+                  className="select-none absolute -top-4 -ml-4 w-12 h-12 sm:w-16 sm:h-16 lg:w-[100px] lg:h-[100px] 2xl:w-[130px] 2xl:h-[130px] md:top-2 md:left-10 left-12 lg:top-30 2xl:top-40 lg:-left-14 2xl:-left-18"
                 />
                 <h2
                   className="ml-16 md:py-10 lg:ml-0 2xl:ml-0 mb-6 lg: text-2xl md:text-3xl lg:text-[40px] 2xl:text-[52px] lg:pt-40 2xl:pt-52"
@@ -228,7 +231,7 @@ const WhyLentlzSection = () => {
                       <img
                         src="/assets/Clean cooking environment icon.png"
                         alt="Clean Cooking"
-                        className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
+                        className="select-none w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                       />
                     </div>
                     <p className="text-center lg:text-left text-sm md:text-base lg:text-[19.9px] 2xl:text-[18px] font-bold text-black">
@@ -246,7 +249,7 @@ const WhyLentlzSection = () => {
                       <img
                         src="/assets/Handpicked ingredients icon.png"
                         alt="Handpicked"
-                        className="w-14 h-14 md:w-20 md:h-20 lg:w-12 lg:h-12 2xl:w-28 2xl:h-28"
+                        className="select-none w-14 h-14 md:w-20 md:h-20 lg:w-12 lg:h-12 2xl:w-28 2xl:h-28"
                       />
                     </div>
                     <p className="text-center lg:text-left text-sm md:text-base lg:text-[19.9px] 2xl:text-[18px] font-bold text-black">
